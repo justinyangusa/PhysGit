@@ -19,7 +19,7 @@ while True:
 	for gesture in frame.gestures():
 		if gesture.type == Leap.Gesture.TYPE_SCREEN_TAP:
 			print "hello"
-			print os.system('git add -A; git commit;')
+			print os.system('git add -A; git commit -am "Automated commit by Leap Motion";')
 		elif gesture.type == Leap.Gesture.TYPE_KEY_TAP:
 			print "bye"
 			print os.system("git push")
