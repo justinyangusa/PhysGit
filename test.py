@@ -1,7 +1,7 @@
 from subprocess import check_output
 import sys
 import os
-sys.path.insert(0, "C:\Users\Kartikye\Downloads\Leap_Motion_SDK_Windows_2.2.2\LeapDeveloperKit_2.2.2+24469_win\LeapSDK\lib")
+sys.path.insert(0, "/LeapSDK/lib")
 import LeapPython
 import Leap
 
@@ -18,7 +18,7 @@ while True:
 
 	for gesture in frame.gestures():
 		if gesture.type == Leap.Gesture.TYPE_SCREEN_TAP:
-			print "0hello"
+			print "hello"
 			print os.system('git commit')
 		elif gesture.type == Leap.Gesture.TYPE_KEY_TAP:
 			print "bye"
